@@ -1,0 +1,43 @@
+.features {
+  @include pTop-pBottom94();
+  &-list {
+    @include dFlex-m0();
+  }
+}
+
+.feature {
+  &-card {
+    width: 270px;
+  }
+  &-card:not(:last-child) {
+    margin-right: 30px;
+  }
+  &-img {
+    width: 270px;
+    height: 120px;
+    display: block;
+
+    background-color: $secondary-background-color;
+    border-radius: 4px;
+
+    padding: 25px 102px;
+    margin: 0 0 30px 0;
+  }
+  &-header {
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 1.142;
+    text-transform: uppercase;
+    color: $header-text-color;
+
+    margin: 0 0 10px 0;
+  }
+  &-desription {
+    font-weight: normal;
+    font-size: 14px;
+    line-height: 1.71;
+    color: $title-text-color;
+
+    margin: 0;
+  }
+}

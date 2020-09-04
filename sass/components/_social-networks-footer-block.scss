@@ -1,0 +1,18 @@
+.social-networks {
+  padding-top: 72px;
+  margin-right: 94px;
+
+  &-h {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 1.14;
+    text-transform: uppercase;
+
+    color: $primary-white-color;
+  }
+}
+
+.social-link-item:not(:last-child) {
+  margin-right: 10px;
+}

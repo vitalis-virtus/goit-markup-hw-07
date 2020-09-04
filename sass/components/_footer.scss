@@ -1,0 +1,44 @@
+footer {
+  background-color: $footer-bgc;
+}
+
+.logo-footer {
+  @include main-logo($primary-white-color);
+}
+
+.social-link-footer {
+  @include social-link($primary-white-color, $social-link-footer-bgc);
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+    fill: $primary-white-color;
+  }
+}
+
+.footer {
+  &-main-info {
+    display: block;
+    padding-top: 60px;
+    padding-bottom: 60px;
+    margin-right: 69px;
+  }
+  &-adress {
+    font-size: 14px;
+    line-height: 1.71;
+    color: $primary-white-color;
+    padding-bottom: 9px;
+  }
+  &-contacts {
+    margin-top: 20px;
+    min-width: 231px;
+  }
+  &-contact-item {
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 1.71;
+    letter-spacing: 0.03em;
+
+    color: $secondary-text-color;
+    padding-bottom: 9px;
+  }
+}

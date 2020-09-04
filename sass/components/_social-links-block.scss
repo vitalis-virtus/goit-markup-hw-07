@@ -1,0 +1,36 @@
+.social {
+  &-links {
+    display: flex;
+    justify-content: center;
+    height: 44px;
+  }
+  &-link-we-do {
+    @include social-link($border-color, $primary-white-color) // display: flex;
+      // width: 44px;
+      // height: 44px;
+      // align-items: center;
+      // justify-content: center;
+      // border: 1px solid transparent;
+      // border-radius: 50%;
+      // fill: $border-color;
+      // background-color: $primary-white-color;
+      // transition: cubic-bezier(0.4, 0, 0.2, 1) 250ms;
+;
+  }
+  &-link-we-do:hover,
+  &-link-we-do:focus {
+    background-color: $accent-color;
+    fill: $primary-white-color;
+  }
+  &-link-item:not(:last-child) {
+    margin-right: 10px;
+  }
+}
+
+.button-icon {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  width: 20px;
+  height: 20px;
+}

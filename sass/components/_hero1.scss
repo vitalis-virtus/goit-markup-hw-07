@@ -1,0 +1,31 @@
+.hero1 {
+  background-image: url("../images/hero-1-image.png");
+  background-repeat: no-repeat;
+  background-position: top center;
+  background-size: cover;
+
+  &-content {
+    background-color: $primary-background-color;
+    text-align: center;
+    padding-top: 200px;
+    padding-bottom: 200px;
+  }
+
+  &-btn {
+    @include main-btn();
+  }
+
+  &-h1 {
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+    color: $primary-white-color;
+
+    display: block;
+    width: 696px;
+    margin: 0 auto;
+  }
+}
